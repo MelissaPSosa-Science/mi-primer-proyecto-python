@@ -2,7 +2,7 @@
 from handler import lambda_handler
 
 evento_prueba = {
-    "nombre": "Melissa"
+    "nombre": "Luis"
 }
 
 resultado = lambda_handler(evento_prueba, None)

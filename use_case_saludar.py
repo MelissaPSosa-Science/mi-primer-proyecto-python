@@ -13,10 +13,10 @@ def saludar(nombre):
 """
 
 #Aqui inicia el servicio sin dependencia directa a la base de datos
-def saludar(nombre, repo):
+def ejecutar(nombre, repo):
     mensaje = repo.buscar_usuario(nombre)
 
-    if mensaje:
-        return mensaje
+    if not mensaje:
+        raise Exception(f"Usuario {nombre} no encontrado, no se encuentra en la base de datos")
 
-    return f"Hola {nombre}"
+    return mensaje
