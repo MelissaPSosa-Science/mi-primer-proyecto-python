@@ -4,7 +4,7 @@ def buscar_usuario(nombre):
     usuarios = {
         "Melissa": "Bienvenida de nuevo, Melissa",
         "Ana": "Hola Ana, qué gusto verte",
-        "Luis": "Hola Luis, bienvenido"
+        "Luis": "Hola Luis, bienvenido al mundo infinito"
     }
 
     return usuarios.get(nombre)
